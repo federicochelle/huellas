@@ -1904,7 +1904,7 @@ body:has(.gallery-section) .page-hero {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 70;
+  z-index: 7000;
   width: min(420px, 100vw);
   height: 100vh;
   display: grid;

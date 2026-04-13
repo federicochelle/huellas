@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas | Fotogalería</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="data/products.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/cart-drawer.js"></script>
+    <script defer src="js/gallery-lightbox.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a href="index.html" class="brand navbar-brand site-logo" aria-label="Huellas inicio">
+            <img src="assets/logo.webp" alt="Huellas" class="site-logo-image" loading="lazy" />
+          </a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir navegación">
+            Menú
+          </button>
+          <nav class="site-nav" data-nav>
+            <a href="catalogo.html">Catálogo</a>
+            <a class="active" href="personalizados.html">Fotogalería</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+          <a class="cart-link header-cart" href="carrito.html">Carrito</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero">
+          <div class="container">
+            <div class="page-hero-card gallery-page-hero-card">
+              <h1>Fotogalería</h1>
+              <p>
+                Una selección de piezas, detalles y recuerdos creados en Huellas.
+                Explorá imágenes de trabajos realizados, texturas, composiciones y
+                momentos que inspiran nuestra forma de crear.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section gallery-section">
+          <div class="container">
+            <div class="gallery-grid">
+              <button class="gallery-item gallery-item-tall" type="button" data-gallery-image="assets/manos.webp" aria-label="Abrir imagen de huellas en las manos">
+                <img src="assets/manos.webp" alt="Huellas tomadas sobre manos adultas" loading="lazy" />
+              </button>
+              <button class="gallery-item" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.21 PM (3).webp" aria-label="Abrir imagen de pieza terminada">
+                <img src="assets/WhatsApp Image 2026-04-12 at 9.27.21 PM (3).webp" alt="Pieza artesanal terminada en yeso" loading="lazy" />
+              </button>
+              <button class="gallery-item gallery-item-wide" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM.webp" aria-label="Abrir imagen de recuerdo familiar">
+                <img src="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM.webp" alt="Recuerdo familiar en yeso con acabado suave" loading="lazy" />
+              </button>
+              <button class="gallery-item" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (1).webp" aria-label="Abrir imagen de composicion artesanal">
+                <img src="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (1).webp" alt="Composición artesanal en tonos claros" loading="lazy" />
+              </button>
+              <button class="gallery-item gallery-item-tall" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (2).webp" aria-label="Abrir imagen de detalle en yeso">
+                <img src="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (2).webp" alt="Detalle de pieza hecha a mano" loading="lazy" />
+              </button>
+              <button class="gallery-item" type="button" data-gallery-image="assets/manos.webp" aria-label="Abrir imagen de proceso artesanal">
+                <img src="assets/manos.webp" alt="Proceso artesanal de toma de huellas" loading="lazy" />
+              </button>
+              <button class="gallery-item" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.21 PM (3).webp" aria-label="Abrir imagen de textura y acabado">
+                <img src="assets/WhatsApp Image 2026-04-12 at 9.27.21 PM (3).webp" alt="Textura y acabado delicado de una pieza" loading="lazy" />
+              </button>
+              <button class="gallery-item gallery-item-wide" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (1).webp" aria-label="Abrir imagen de pieza en contexto">
+                <img src="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (1).webp" alt="Pieza presentada en un entorno cálido" loading="lazy" />
+              </button>
+            </div>
+
+            <div class="gallery-lightbox" data-gallery-lightbox hidden>
+              <button class="gallery-lightbox-overlay" type="button" data-gallery-close aria-label="Cerrar imagen ampliada"></button>
+              <div class="gallery-lightbox-dialog" role="dialog" aria-modal="true" aria-label="Vista ampliada de la imagen">
+                <button class="gallery-lightbox-close" type="button" data-gallery-close aria-label="Cerrar imagen ampliada">×</button>
+                <img class="gallery-lightbox-image" src="" alt="" data-gallery-lightbox-image />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-content">
+          <div class="footer-brand">
+            <img src="assets/logo.webp" alt="Huellas" class="footer-logo" loading="lazy" />
+            <p class="footer-title">Huellas</p>
+            <span class="footer-subtitle">Arte en yeso</span>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contacto</h3>
+            <p>+598 96 303 052</p>
+            <p>contacto@huellasarteenyeso.com</p>
+            <p>Montevideo, Uruguay</p>
+          </div>
+
+          <div class="footer-social">
+            <h3>Redes</h3>
+            <a href="https://www.instagram.com/huellas.arte.en.yeso" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Huellas">Instagram</a>
+            <a href="https://wa.me/59896303052?text=Hola%20quiero%20consultar%20por%20una%20pieza%20de%20Huellas" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© Huellas - Arte en yeso. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

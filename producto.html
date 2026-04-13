@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas | Producto</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="data/products.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/cart-drawer.js"></script>
+    <script defer src="js/producto.js"></script>
+  </head>
+  <body class="product-page">
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a href="index.html" class="brand navbar-brand site-logo" aria-label="Huellas inicio">
+            <img src="assets/logo.webp" alt="Huellas" class="site-logo-image" loading="lazy" />
+          </a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir navegación">
+            Menú
+          </button>
+          <nav class="site-nav" data-nav>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="personalizados.html">Fotogalería</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+          <a class="cart-link header-cart" href="carrito.html">Carrito</a>
+        </div>
+      </header>
+
+      <main>
+      
+
+        <section class="content-section product-detail-section">
+          <div class="container">
+            <div data-product-detail></div>
+            <p class="catalog-feedback" data-product-feedback aria-live="polite"></p>
+            <a href="catalogo.html" class="back-to-catalog-bottom">← Volver al catálogo</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-content">
+          <div class="footer-brand">
+            <img src="assets/logo.webp" alt="Huellas" class="footer-logo" loading="lazy" />
+            <p class="footer-title">Huellas</p>
+            <span class="footer-subtitle">Arte en yeso</span>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contacto</h3>
+            <p>+598 96 303 052</p>
+            <p>contacto@huellasarteenyeso.com</p>
+            <p>Montevideo, Uruguay</p>
+          </div>
+
+          <div class="footer-social">
+            <h3>Redes</h3>
+            <a href="https://www.instagram.com/huellas.arte.en.yeso" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Huellas">Instagram</a>
+            <a href="https://wa.me/59896303052?text=Hola%20quiero%20consultar%20por%20una%20pieza%20de%20Huellas" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© Huellas - Arte en yeso. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

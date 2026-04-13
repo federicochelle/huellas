@@ -11,22 +11,35 @@
     <script defer src="js/cart-drawer.js"></script>
     <script defer src="js/home-carousel.js"></script>
     <script defer src="js/reviews-carousel.js"></script>
+    <script defer src="js/home-reveal.js"></script>
+    <script defer src="js/home-loader.js"></script>
   </head>
   <body>
+    <div class="site-loader" data-site-loader aria-hidden="true">
+      <div class="site-loader__inner">
+        <img src="assets/logo.webp" alt="Huellas" class="site-loader__logo" />
+        <div class="site-loader__text">
+          <span class="site-loader__title">huellas</span>
+          <span class="site-loader__subtitle">ARTE EN YESO</span>
+        </div>
+      </div>
+    </div>
     <div class="site-shell">
       <header class="site-header">
         <div class="container header-inner">
           <a href="index.html" class="brand navbar-brand site-logo" aria-label="Huellas inicio">
             <img src="assets/logo.webp" alt="Huellas" class="site-logo-image" loading="lazy" />
           </a>
-          <button
+            <button
             class="nav-toggle"
             type="button"
             data-nav-toggle
             aria-expanded="false"
             aria-label="Abrir navegación"
           >
-            Menú
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
           <nav class="site-nav" data-nav>
             <a href="catalogo.html">Catálogo</a>
@@ -76,11 +89,11 @@
           </div>
         </section>
 
-        <section class="home-story-section">
+        <section class="home-story-section reveal-on-scroll">
           <div class="container">
            
 
-            <div class="story-block">
+            <div class="story-block reveal-on-scroll">
               <div class="story-media">
                 <img src="assets/manos.webp" alt="Pieza artesanal en yeso con acabado suave" loading="lazy" />
               </div>
@@ -99,7 +112,7 @@
               </div>
             </div>
 
-            <div class="story-block story-block-reverse">
+            <div class="story-block story-block-reverse reveal-on-scroll">
               <div class="story-copy">
                 <h2>Piezas que guardan historias y momentos irrepetibles</h2>
                 <p>
@@ -122,14 +135,14 @@
           </div>
         </section>
 
-        <section class="home-categories-section">
+        <section class="home-categories-section reveal-on-scroll">
           <div class="container">
-            <div class="categories-intro">
+            <div class="categories-intro reveal-on-scroll">
               <h2>Un universo hecho de recuerdos, texturas y momentos para guardar</h2>
             </div>
 
             <div class="categories-grid">
-              <a class="category-item" href="catalogo.html">
+              <a class="category-item reveal-on-scroll" href="catalogo.html">
                 <div class="category-image-wrap">
                   <img src="assets/WhatsApp Image 2026-04-12 at 9.27.21 PM (3).webp" alt="Esculturas hechas a mano" loading="lazy" />
                 </div>
@@ -137,7 +150,7 @@
                 <p>Piezas únicas hechas a mano</p>
               </a>
 
-              <a class="category-item" href="catalogo.html">
+              <a class="category-item reveal-on-scroll" href="catalogo.html">
                 <div class="category-image-wrap">
                   <img src="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (1).webp" alt="Cuadros y recuerdos enmarcados" loading="lazy" />
                 </div>
@@ -145,7 +158,7 @@
                 <p>Recuerdos enmarcados</p>
               </a>
 
-              <a class="category-item" href="personalizados.html">
+              <a class="category-item reveal-on-scroll" href="personalizados.html">
                 <div class="category-image-wrap">
                   <img src="assets/manos.webp" alt="Proceso artesanal de cada pieza" loading="lazy" />
                 </div>
@@ -153,7 +166,7 @@
                 <p>Imagenes y trabajos realizados</p>
               </a>
 
-              <a class="category-item" href="personalizados.html">
+              <a class="category-item reveal-on-scroll" href="personalizados.html">
                 <div class="category-image-wrap">
                   <img src="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (2).webp" alt="Diseños personalizados a medida" loading="lazy" />
                 </div>
@@ -161,7 +174,7 @@
                 <p>Diseños a medida</p>
               </a>
 
-              <a class="category-item" href="sobre.html">
+              <a class="category-item reveal-on-scroll" href="sobre.html">
                 <div class="category-image-wrap">
                   <img src="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM.webp" alt="Inspiración y trabajos realizados" loading="lazy" />
                 </div>
@@ -172,13 +185,13 @@
           </div>
         </section>
 
-        <section class="home-reviews-section" data-reviews-carousel>
+        <section class="home-reviews-section reveal-on-scroll" data-reviews-carousel>
           <div class="container">
-            <div class="reviews-intro">
+            <div class="reviews-intro reveal-on-scroll">
               <h2>Historias que dejan huella</h2>
             </div>
 
-            <div class="reviews-carousel-shell">
+            <div class="reviews-carousel-shell reveal-on-scroll">
               <button class="reviews-arrow reviews-arrow-left" type="button" data-reviews-prev aria-label="Testimonio anterior">
                 &lt;
               </button>
@@ -249,9 +262,9 @@
           </div>
         </section>
 
-        <section class="home-contact-section">
+        <section class="home-contact-section reveal-on-scroll">
           <div class="contact-grid">
-            <div class="contact-info-column contact-panel contact-panel-info">
+            <div class="contact-info-column contact-panel contact-panel-info reveal-on-scroll">
               <h2>Contacto</h2>
               <p class="contact-intro">
                 Si querés hacer una consulta, encargar una pieza personalizada o conocer más sobre el proceso, escribinos. Vamos a estar felices de acompañarte en la creación de un recuerdo único.
@@ -283,7 +296,7 @@
               </div>
             </div>
 
-            <div class="contact-form-column contact-panel contact-panel-form">
+            <div class="contact-form-column contact-panel contact-panel-form reveal-on-scroll">
               <form class="contact-form-card" action="#" method="post">
                 <h3>Escribinos</h3>
 
@@ -316,22 +329,22 @@
      
       </main>
 
-      <footer class="site-footer">
+      <footer class="site-footer reveal-on-scroll">
         <div class="container footer-content">
-          <div class="footer-brand">
+          <div class="footer-brand reveal-on-scroll">
             <img src="assets/logo.webp" alt="Huellas" class="footer-logo" loading="lazy" />
             <p class="footer-title">Huellas</p>
             <span class="footer-subtitle">Arte en yeso</span>
           </div>
 
-          <div class="footer-contact">
+          <div class="footer-contact reveal-on-scroll">
             <h3>Contacto</h3>
             <p>+598 96 303 052</p>
             <p>contacto@huellasarteenyeso.com</p>
             <p>Montevideo, Uruguay</p>
           </div>
 
-          <div class="footer-social">
+          <div class="footer-social reveal-on-scroll">
             <h3>Redes</h3>
             <a href="https://www.instagram.com/huellas.arte.en.yeso" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Huellas">Instagram</a>
             <a href="https://wa.me/59896303052?text=Hola%20quiero%20consultar%20por%20una%20pieza%20de%20Huellas" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">WhatsApp</a>

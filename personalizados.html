@@ -9,6 +9,7 @@
     <script defer src="js/cart.js"></script>
     <script defer src="js/main.js"></script>
     <script defer src="js/cart-drawer.js"></script>
+    <script defer src="js/home-reveal.js"></script>
     <script defer src="js/gallery-lightbox.js"></script>
   </head>
   <body>
@@ -19,7 +20,9 @@
             <img src="assets/logo.webp" alt="Huellas" class="site-logo-image" loading="lazy" />
           </a>
           <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir navegación">
-            Menú
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
           <nav class="site-nav" data-nav>
             <a href="catalogo.html">Catálogo</a>
@@ -32,9 +35,9 @@
       </header>
 
       <main>
-        <section class="page-hero">
+        <section class="page-hero reveal-on-scroll">
           <div class="container">
-            <div class="page-hero-card gallery-page-hero-card">
+            <div class="page-hero-card gallery-page-hero-card reveal-on-scroll">
               <h1>Fotogalería</h1>
               <p>
                 Una selección de piezas, detalles y recuerdos creados en Huellas.
@@ -45,31 +48,31 @@
           </div>
         </section>
 
-        <section class="content-section gallery-section">
+        <section class="content-section gallery-section reveal-on-scroll">
           <div class="container">
-            <div class="gallery-grid">
-              <button class="gallery-item gallery-item-tall" type="button" data-gallery-image="assets/manos.webp" aria-label="Abrir imagen de huellas en las manos">
+            <div class="gallery-grid reveal-on-scroll">
+              <button class="gallery-item gallery-item-tall reveal-on-scroll" type="button" data-gallery-image="assets/manos.webp" aria-label="Abrir imagen de huellas en las manos">
                 <img src="assets/manos.webp" alt="Huellas tomadas sobre manos adultas" loading="lazy" />
               </button>
-              <button class="gallery-item" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.21 PM (3).webp" aria-label="Abrir imagen de pieza terminada">
+              <button class="gallery-item reveal-on-scroll" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.21 PM (3).webp" aria-label="Abrir imagen de pieza terminada">
                 <img src="assets/WhatsApp Image 2026-04-12 at 9.27.21 PM (3).webp" alt="Pieza artesanal terminada en yeso" loading="lazy" />
               </button>
-              <button class="gallery-item gallery-item-wide" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM.webp" aria-label="Abrir imagen de recuerdo familiar">
+              <button class="gallery-item gallery-item-wide reveal-on-scroll" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM.webp" aria-label="Abrir imagen de recuerdo familiar">
                 <img src="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM.webp" alt="Recuerdo familiar en yeso con acabado suave" loading="lazy" />
               </button>
-              <button class="gallery-item" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (1).webp" aria-label="Abrir imagen de composicion artesanal">
+              <button class="gallery-item reveal-on-scroll" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (1).webp" aria-label="Abrir imagen de composicion artesanal">
                 <img src="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (1).webp" alt="Composición artesanal en tonos claros" loading="lazy" />
               </button>
-              <button class="gallery-item gallery-item-tall" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (2).webp" aria-label="Abrir imagen de detalle en yeso">
+              <button class="gallery-item gallery-item-tall reveal-on-scroll" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (2).webp" aria-label="Abrir imagen de detalle en yeso">
                 <img src="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (2).webp" alt="Detalle de pieza hecha a mano" loading="lazy" />
               </button>
-              <button class="gallery-item" type="button" data-gallery-image="assets/manos.webp" aria-label="Abrir imagen de proceso artesanal">
+              <button class="gallery-item reveal-on-scroll" type="button" data-gallery-image="assets/manos.webp" aria-label="Abrir imagen de proceso artesanal">
                 <img src="assets/manos.webp" alt="Proceso artesanal de toma de huellas" loading="lazy" />
               </button>
-              <button class="gallery-item" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.21 PM (3).webp" aria-label="Abrir imagen de textura y acabado">
+              <button class="gallery-item reveal-on-scroll" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.21 PM (3).webp" aria-label="Abrir imagen de textura y acabado">
                 <img src="assets/WhatsApp Image 2026-04-12 at 9.27.21 PM (3).webp" alt="Textura y acabado delicado de una pieza" loading="lazy" />
               </button>
-              <button class="gallery-item gallery-item-wide" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (1).webp" aria-label="Abrir imagen de pieza en contexto">
+              <button class="gallery-item gallery-item-wide reveal-on-scroll" type="button" data-gallery-image="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (1).webp" aria-label="Abrir imagen de pieza en contexto">
                 <img src="assets/WhatsApp Image 2026-04-12 at 9.27.22 PM (1).webp" alt="Pieza presentada en un entorno cálido" loading="lazy" />
               </button>
             </div>
@@ -85,22 +88,22 @@
         </section>
       </main>
 
-      <footer class="site-footer">
+      <footer class="site-footer reveal-on-scroll">
         <div class="container footer-content">
-          <div class="footer-brand">
+          <div class="footer-brand reveal-on-scroll">
             <img src="assets/logo.webp" alt="Huellas" class="footer-logo" loading="lazy" />
             <p class="footer-title">Huellas</p>
             <span class="footer-subtitle">Arte en yeso</span>
           </div>
 
-          <div class="footer-contact">
+          <div class="footer-contact reveal-on-scroll">
             <h3>Contacto</h3>
             <p>+598 96 303 052</p>
             <p>contacto@huellasarteenyeso.com</p>
             <p>Montevideo, Uruguay</p>
           </div>
 
-          <div class="footer-social">
+          <div class="footer-social reveal-on-scroll">
             <h3>Redes</h3>
             <a href="https://www.instagram.com/huellas.arte.en.yeso" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Huellas">Instagram</a>
             <a href="https://wa.me/59896303052?text=Hola%20quiero%20consultar%20por%20una%20pieza%20de%20Huellas" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">WhatsApp</a>
